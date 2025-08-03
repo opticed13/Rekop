@@ -1,0 +1,109 @@
+.player {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+
+.player-active {
+  border: 3px solid #28a745;
+  background: rgba(40, 167, 69, 0.1);
+}
+
+.player-waiting {
+  border: 2px solid #6c757d;
+}
+
+.player-folded {
+  opacity: 0.5;
+  border: 2px solid #dc3545;
+}
+
+.player-info {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.player-name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dealer-button {
+  background: #ffc107;
+  color: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.player-chips {
+  font-size: 12px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.player-bet {
+  font-size: 11px;
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.player-cards {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.fold-overlay,
+.all-in-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(220, 53, 69, 0.9);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.all-in-overlay {
+  background: rgba(255, 193, 7, 0.9);
+  color: #000;
+}
+
+/* Position-specific styles */
+.player-top {
+  align-self: flex-start;
+}
+
+.player-bottom {
+  align-self: flex-end;
+}
+
+.player-left {
+  align-self: center;
+}
+
+.player-right {
+  align-self: center;
+}

@@ -1,0 +1,86 @@
+.card {
+  width: 60px;
+  height: 84px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 2px;
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.card.small {
+  width: 40px;
+  height: 56px;
+  font-size: 10px;
+}
+
+.card.large {
+  width: 80px;
+  height: 112px;
+  font-size: 16px;
+}
+
+.card-rank {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card.small .card-rank {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.card.large .card-rank {
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.card-suit {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.card.small .card-suit {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.card.large .card-suit {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.card.red {
+  color: #dc3545;
+}
+
+.card.black {
+  color: #333;
+}
+
+.card-back {
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-pattern {
+  width: 80%;
+  height: 80%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.1),
+    rgba(255,255,255,0.1) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
